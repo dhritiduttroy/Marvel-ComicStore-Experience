@@ -1,0 +1,70 @@
+/*
+============================================
+Header area
+============================================
+*/
+
+
+.jumbotron {
+  text-align: center;
+  height: 200px;
+}
+
+/*
+============================================
+Text underneath Header
+============================================
+*/
+
+blockquote {
+  margin-left: 50px;
+  text-align: center;
+}
+
+/*
+============================================
+Main area of page
+============================================
+*/
+
+.middle {
+  display: flex;
+}
+
+/*Left section of main area*/
+.choice {
+  width: 40%;
+}
+
+/*Drop down menu for hero selection*/
+.heros {
+  width: 300px;
+  margin-left: 50px;
+}
+
+/*Text underneath drop-down menu*/
+.lead {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+
+.results {
+  align-self: flex-end;
+  padding: 5px;
+}
+
+img {
+  padding: 4px;
+}
+/*
+============================================
+Footer
+============================================
+*/
+
+.well {
+  text-align: center;
+}

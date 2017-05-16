@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Marvel Comic Store Experience</title>
+    <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <header class="jumbotron">
+      <h1>Virtual Comic Book Store</h1>
+      <h3>Data provided by Marvel. © 2017 Marvel</h3>
+    </header>
+
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+    </blockquote>
+
+<!--  *********************************************
+            Main Area of page
+      ********************************************* -->
+
+    <main class="middle">
+      <div class="choice">
+        <form class="form-horizontal">
+          <fieldset>
+
+  <!--  ********************************************
+            Drop-down menu for selecting super heros
+        ******************************************** -->
+
+            <select name="supers" class="form-control heros" id="select">
+              <option selected disabled>Select a Super Hero Here</option>
+              <option disabled>** MOVIES **</option>
+              <option value="1010802">Ant-Man</option>
+              <option value="1009165">The Avengers</option>
+              <option value="1009189"> - Black Widow</option>
+              <option value="1010913"> - Captain America</option>
+              <option value="1009338"> - Hawkeye</option>
+              <option value="1011005"> - Hulk</option>
+              <option value="1010935"> - Iron Man</option>
+              <option value="1009664"> - Thor</option>
+              <option value="1009697"> - Vision</option>
+
+              <option value="1009187">Black Panther</option>
+
+              <option value="1009299">Fantastic Four</option>
+
+              <option value="1010925">Ghost Rider</option>
+
+              <option value="1011299">Guardians of the Galaxy</option>
+
+              <option value="1016181">Spider-Man</option>
+
+              <option value="1009726">X-Men</option>
+
+              <option disabled></option>
+
+              <option disabled>** TV SERIES **</option>
+
+              <option value="1011023">The Defenders</option>
+              <option value="1009378"> - aka Jessica Jones</option>
+              <option value="1009262"> - Daredevil</option>
+              <option value="1009367"> - Iron Fist</option>
+              <option value="1009215"> - Luke Cage</option>
+
+            </select>
+  <!--  ********************************************
+                Submit Button
+        ********************************************  -->
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-danger" id="submit">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <p class="lead">Hug Wolf. Every hundred years, it spews evil spores across the land.
+          Then lets burn its butt down to the roof rubbins. (The duo walks forward.)
+          Finn, I can feel a bunch a eyeballs peepin us from the woods. Hhyuuugs!
+          What the?! Is this an extra butt?! Quick, Jake! Burn the tree! Huuuugs!
+          (Finn grunts and they begin circling each other) Gonna cut you up, boy!
+          Im gonna snuggle you to pieces! DUDE! THE TREES ABOUT TO SPLODE ITS EVIL
+          JUICE ALL OVER! I didnt hug you last night.</p>
+      </div>
+
+  <!--  ********************************************
+              Display image results from selection
+        ******************************************** -->
+      <div class="results">
+
+      </div>
+
+    </main>
+
+<!--  **********************************************
+              Footer of page with attribute to Marvel
+      **********************************************  -->
+
+    <footer class="well">Data provided by Marvel. © 2017 Marvel</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous" charset="utf-8">
+    </script>
+    <script src="marvel.js" type="text/javascript"></script>
+  </body>
+</html>
