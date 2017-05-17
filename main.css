@@ -4,10 +4,19 @@ Header area
 ============================================
 */
 
-
 .jumbotron {
   text-align: center;
-  height: 200px;
+  /*height: 200px;*/
+}
+
+header h1 {
+  text-shadow: 3px 3px 1px #000000;
+}
+
+.heroImage {
+  background-image: url(/assets/images/marvel-heroes.png);
+  object-fit: scale-down;
+  overflow: hidden;
 }
 
 /*
@@ -47,6 +56,7 @@ Main area of page
   margin-left: 50px;
   margin-right: 20px;
   margin-top: 20px;
+  width: 275px;
 }
 
 
@@ -58,6 +68,10 @@ Main area of page
 
 img {
   padding: 4px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #dc1c16;
+  box-shadow: 7px 7px 4px grey;
 }
 /*
 ============================================
