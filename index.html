@@ -14,8 +14,8 @@
     </header>
 
     <blockquote>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+      <p class="snarkyComment"></p>
+      <small><cite title="Source Title">Snarky Comic Store Employee</cite></small>
     </blockquote>
 
 <!--  *********************************************
@@ -38,7 +38,7 @@
               <option value="1009165">The Avengers</option>
               <option value="1009189"> - Black Widow</option>
               <option value="1010913"> - Captain America</option>
-              <option value="1017110"> - Falcon</option>
+              <option value="1017110" disabled> - Falcon</option>
               <option value="1009338"> - Hawkeye</option>
               <option value="1011005"> - Hulk</option>
               <option value="1010935"> - Iron Man</option>
@@ -46,9 +46,11 @@
               <option value="1009562"> - Scarlet Witch</option>
               <option value="1009664"> - Thor</option>
               <option value="1009697"> - Vision</option>
-              <option value="1017304"> - War Machine</option>
+              <option value="1017304" disabled> - War Machine</option>
 
               <option value="1009187">Black Panther</option>
+
+              <option value="1009191">Blade</option>
 
               <option value="1009268">Deadpool</option>
 
@@ -76,7 +78,16 @@
               <option value="1009215"> - Luke Cage</option>
               <option value="1009515"> - Punisher</option>
 
-              </option>
+              <option disabled></option>
+
+              <option disabled>** VILLAINS **</option>
+
+              <option value="1009156">Apocalypse</option>
+              <option value="1009312">Galactus</option>
+              <option value="1010928">Green Goblin</option>
+              <option value="1009407">Loki</option>
+              <option value="1009652">Thanos</option>
+              <option value="1009685">Ultron</option>
 
             </select>
   <!--  ********************************************
@@ -104,6 +115,24 @@
         ******************************************** -->
       <div class="results">
 
+      </div>
+
+      <div class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </main>
