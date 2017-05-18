@@ -15,7 +15,6 @@
 
     <blockquote>
       <p class="snarkyComment"></p>
-      <small><cite title="Source Title">Snarky Comic Store Employee</cite></small>
     </blockquote>
 
 <!--  *********************************************
@@ -23,7 +22,7 @@
       ********************************************* -->
 
     <main class="middle">
-      <div class="choice">
+      <div class="cchoice">
         <form class="form-horizontal">
           <fieldset>
 
@@ -47,30 +46,24 @@
               <option value="1009664"> - Thor</option>
               <option value="1009697"> - Vision</option>
               <option value="1017304" disabled> - War Machine</option>
-
               <option value="1009187">Black Panther</option>
-
               <option value="1009191">Blade</option>
-
+              <option value="1010338">Captain Marvel</option>
               <option value="1009268">Deadpool</option>
-
               <option value="1009282">Doctor Strange</option>
-
               <option value="1009299">Fantastic Four</option>
-
               <option value="1010925">Ghost Rider</option>
-
               <option value="1011299">Guardians of the Galaxy</option>
-
+              <option value="1011007">Nick Fury</option>
               <option value="1016181">Spider-Man</option>
-
+              <option value="1010740" disabled>Winter Soldier</option>
               <option value="1009726">X-Men</option>
+              <option value="1009629"> - Storm</option>
               <option value="1009718"> - Wolverine</option>
 
               <option disabled></option>
 
               <option disabled>** TV SERIES **</option>
-
               <option value="1011023">The Defenders</option>
               <option value="1009378"> - aka Jessica Jones</option>
               <option value="1009262"> - Daredevil</option>
@@ -81,13 +74,25 @@
               <option disabled></option>
 
               <option disabled>** VILLAINS **</option>
-
               <option value="1009156">Apocalypse</option>
+              <option value="1009265">Dark Phoenix</option>
+              <option value="1009281">Doctor Doom</option>
+              <option value="1009276">Doctor Octopus</option>
+              <option value="1009287">Electro</option>
               <option value="1009312">Galactus</option>
               <option value="1010928">Green Goblin</option>
+              <option value="1011044">Hellions</option>
+              <option value="1009359" disabled>Hydra</option>
               <option value="1009407">Loki</option>
+              <option value="1009417">Magneto</option>
+              <option value="1009465">Mystique</option>
+              <option value="1009535" disabled>Red Skull</option>
+              <option value="1010344">Ronan</option>
+              <option value="1009558">Sandman</option>
+              <option value="1009581">Sebastian Shaw</option>
               <option value="1009652">Thanos</option>
               <option value="1009685">Ultron</option>
+              <option value="1011128">Venom</option>
 
             </select>
   <!--  ********************************************
@@ -96,8 +101,11 @@
 
             <div class="form-group">
               <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary btn-danger" id="submit">Submit</button>
+                <div class="row">
+                  <button type="reset" class="btn btn-default">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-danger" id="submit">Submit</button>
+                </div>
+
               </div>
             </div>
           </fieldset>
@@ -111,28 +119,15 @@
       </div>
 
   <!--  ********************************************
-              Display image results from selection
+              Right Side - Display image results from selection
         ******************************************** -->
+
       <div class="results">
 
       </div>
 
-      <div class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <p>One fine body…</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
+      <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-danger" style="width: 70%">Loading</div>
       </div>
 
     </main>
