@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $(".progress").hide();
+  var getRequest = undefined;
 
 // ******** Testing for using Local Storage **********
 
@@ -20,6 +21,12 @@ $(document).ready(function () {
   // }
 
   // *********Engage Submit Button ********************
+  $('#cancel').click(function() {
+    getRequest.abort();
+    $("#submit").removeAttr("disabled");
+    $(".progress").hide();
+    console.log("abort", getRequest);
+  })
   $("form").submit(function (event) {
     event.preventDefault();
     $("#submit").attr("disabled", "disabled");
@@ -57,22 +64,22 @@ $(document).ready(function () {
 
     var apiRequest = "https://gateway.marvel.com:443/v1/public/characters/" + characterID + "/comics?apikey=1beea86e559761cbc8bcee0e0aef1ab6"
     // return
-    $.get(apiRequest)
-      .then(function(results) {
-        // console.log('From API:' results);
-        // localStorage.select??? = JSON.stringify(results);
-        // return results;
+    getRequest = $.get(apiRequest, function(results) {
+      // console.log('From API:' results);
+      // localStorage.select??? = JSON.stringify(results);
+      // return results;
 
-        // ******* Itirate through results array for Images to return ********
+      // ******* Itirate through results array for Images to return ********
 
-        for(var i =0; i <results.data.results.length; i++){
-          console.log(results.data.results[i].images[0].path)
-          var html = "<img src='" + results.data.results[i].images[0].path + "/portrait_uncanny.jpg'" + "/>";
-          $(".results").append(html);
-          $("#submit").removeAttr("disabled");
-          $(".progress").hide();
-          }
-        })
+      for(var i =0; i <results.data.results.length; i++){
+        console.log(results.data.results[i].images[0].path)
+        var html = "<img src='" + results.data.results[i].images[0].path + "/portrait_uncanny.jpg'" + "/>";
+        $(".results").append(html);
+        $("#submit").removeAttr("disabled");
+        $(".progress").hide();
+        }
+      })
+      // .then()
         $(".results").empty();
       })
     })

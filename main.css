@@ -27,7 +27,6 @@ Text underneath Header
 blockquote {
   margin-left: 50px;
   text-align: center;
-
   width: auto;
 }
 .snarkyComment {
@@ -45,7 +44,7 @@ Main area of page
   display: flex;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     display: block;
   }
@@ -58,18 +57,22 @@ Main area of page
   .choice {
     display: block;
   }
+  .form-group {
+    display: block;
+  }
   .results {
     clear: both;
   }
   .row {
     margin-left: 50px;
+    width: 30%;
   }
 }
 
 /*Left section of main area*/
-.choice {
+/*.choice {
   width: 40%;
-}
+}*/
 
 /*Drop down menu for hero selection*/
 .heros {

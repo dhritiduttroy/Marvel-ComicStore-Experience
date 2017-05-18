@@ -22,7 +22,7 @@
       ********************************************* -->
 
     <main class="middle">
-      <div class="cchoice">
+      <div class="choice">
         <form class="form-horizontal">
           <fieldset>
 
@@ -30,6 +30,8 @@
             Drop-down menu for selecting super heros
         ******************************************** -->
 
+
+          <div class="form-group">
             <select name="supers" class="form-control heros" id="select">
               <option selected disabled>Select a Super Hero Here</option>
               <option disabled>** MOVIES **</option>
@@ -95,16 +97,18 @@
               <option value="1011128">Venom</option>
 
             </select>
+          </div>
+
   <!--  ********************************************
                 Submit Button
         ********************************************  -->
 
             <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-2">
-                <div class="row">
-                  <button type="reset" class="btn btn-default">Cancel</button>
+              <div class="col-xs-10 col-xs-offset-2">
+                <!-- <div class="row"> -->
+                  <button type="reset" class="btn btn-default" id="cancel">Cancel</button>
                   <button type="submit" class="btn btn-primary btn-danger" id="submit">Submit</button>
-                </div>
+                <!-- </div> -->
 
               </div>
             </div>
